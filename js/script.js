@@ -50,11 +50,11 @@ const deleteAdv = (arr) => {
     });
 };
 
-//HOME WORK - додати аргументи
-const makeChanges = () => {
+
+const makeChanges = (genres, posters) => {
     //ganre.innerHTML = 'Драма';
-    ganre.textContent = 'Драма';
-    poster.style.backgroundImage = 'url("img/bg.jpg")';
+    genres.textContent = 'Драма';
+    posters.style.backgroundImage = 'url("img/bg.jpg")';
 };
 
 const sortArr = (arr) => {
@@ -135,4 +135,4 @@ function createNewFilmElement (films, parent) {
 createNewFilmElement (movieDB.movies, movieList);
 
 deleteAdv(adv);
-makeChanges();
+makeChanges(ganre,poster);
